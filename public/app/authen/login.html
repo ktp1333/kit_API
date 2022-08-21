@@ -1,0 +1,144 @@
+<html ng-app="myApp" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <title>Studio 2</title>
+  <!-- <meta http-equiv="refresh" content="20" /> -->
+  <meta name="apple-mobile-web-app-title" content="DCplan" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 3, user-scalable = yes"
+  />
+  <!-- <link rel="icon" sizes="192x192" href="chart.png"> -->
+  <link href='https://fonts.googleapis.com/css?family=Pridi' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+  <link rel="stylesheet" href="../../app/search/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../app/search/assets/font-awesome/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="../../app/search/assets/css/form-elements.css">
+  <link rel="stylesheet" href="../../app/search/assets/css/style.css"> -->
+
+  <!-- <script type="text/javascript" src="../../bower_components/async/dist/async.min.js"></script> -->
+  <!-- <script src="../../bower_components/angular/angular.min.js"></script> -->
+  <script src="../../bower_components/angular/angular-route.min.js"></script>
+  <script src="../../app/search/assets/js/jquery-1.11.1.min.js"></script>
+  <script src="../../app/search/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../app/search/assets/js/jquery.backstretch.min.js"></script>
+  <script src="../../app/search/assets/js/scripts.js"></script>
+  <script src="../../template/moment/moment.min.js"></script>
+  <script src="../../template/moment/moment-with-locales.min.js"></script>
+  <!-- <script src="../../bower_components/bootstrap/ui-bootstrap-tpls-0.10.0.min.js"></script> -->
+
+  <link rel="stylesheet" href="../../app/authen/css/div.css">
+  <link rel="stylesheet" href="../../app/authen/css/color_green.css">
+  <link rel="stylesheet" href="../../app/authen/css/font.css">
+
+  <script src="../app/authen/authen.js"></script>
+  <script type="text/javascript" src="../../app/app.factory.js"></script>
+</head>
+
+<body ng-controller="authenController">
+  <form name="myForm" class="form-horizontal" role="form">
+    <style>
+      table.classname {
+        width: 150px;
+        /*align="center";*/
+        display: table;
+        /*border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;*/
+      }
+
+      th,
+      td {
+        text-align: center;
+        height: 50px;
+        vertical-align: bottom;
+        /*background-color:gray;*/
+      }
+
+      div.ex1 {
+        width: 100px;
+        margin: auto;
+        /*border: 3px solid #73AD21;*/
+      }
+    </style>
+
+    <div class="container">
+      <div class="panel panel-default" width="50%">
+        <div class="panel-heading" align="center">
+          <font face="" color="Blue" size="6"> log in </font>
+        </div>
+        <div class="panel-body" align="center">
+          <div class="jumbotron">
+            <div>
+              <table>
+                <tr>
+
+                  <td>
+                    <div class="form-group">
+                      <label> Password : </label>
+                      <div>
+                        <input type="password" class="form-control" ng-model="password" placeholder="Password" value="" required autofocus/>
+                      </div>
+                    </div>
+
+                  </td>
+                  <tr>
+                  </tr>
+                  <td>
+
+                    <div class="form-group">
+                      <label> </label>
+                      <div>
+                        <button type="button" class="btn btn-info" ng-click="login(password)" style="width:150px"> Submit </button>
+                      </div>
+                    </div>
+
+                  </td>
+
+                  <tr>
+                  </tr>
+                  <td>
+
+                    <div class="form-group">
+                      <label>
+                        <font color="red"> {{error}} </font>
+                      </label>
+                    </div>
+                  </td>
+                </tr>
+                <!--ng-click="ivfToggle()"-->
+              </table>
+            </div>
+            <!-- <div layout="row" style="float: left; width: 90%;" ng-if="show_menu">
+              <md-button class="md-raised width-100 bgcolor200">
+                <a href="/index_p2" target="_blank" class="w3-button w3-border w3-round-large " role="button"> Item </a>
+              </md-button>
+
+              <md-button class="md-raised width-100 bgcolor200">
+                <a href="/index_p4" target="_blank" class="w3-button  w3-border w3-round-large " role="button"> module </a>
+              </md-button>
+            </div> -->
+            <Br>
+            <Br>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </form>
+
+</body>
+
+</html>

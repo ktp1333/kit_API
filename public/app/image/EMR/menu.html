@@ -1,0 +1,78 @@
+<html>
+
+<head>
+  <title></title>
+</head>
+
+
+<body style="background-color: white;">
+
+
+  <form name="myForm" id="menu_form" class="form-horizontal" role="form">
+    <!-- <style type="text/css">
+     .ff1 {
+      padding-left: 60;
+      font-size: large;
+      color: #f7f5f2 !important;
+    }
+  </style> -->
+    <div layout="column" style="height: auto !important;" ng-cloak>
+      <section layout="row" flex>
+          <md-sidenav class="bgcolor100 width-400" md-component-id="left" md-disable-backdrop md-whiteframe="4">
+              <md-toolbar class="md-theme-indigo ">
+                <h1 class="md-toolbar-tools bgcolor700">
+                  <md-button class="md-icon-button" aria-label="Favorite" ng-click="toggleLeft()">
+                    <md-icon ng-bind="'fast_rewind'"></md-icon>
+                  </md-button>
+                  <p>Choose HN </p>
+                </h1>
+              </md-toolbar>
+    
+              <div class="bgcolor400" flex layout="row">
+                <input type="text" id="HN1" class="form-control width-250 marginleft15" placeholder="HN" ng-model="HN" autofocus />
+                <button class="form-control width-50 margin10"  ng-click="select_episode(HN)"><md-icon ng-bind="'find_in_page'"></md-icon></button>
+                <button class="form-control width-50 margin10"  ng-click="cleartext()"><md-icon ng-bind="'replay'"></md-icon></button>
+              </div>
+    
+              <!-- <md-button class="md-raised md-warn md-hue-1" ng-click="selectdata(HN)" title="Show" style="width:180px;">Choose</md-button> -->
+    
+            </md-sidenav>
+
+
+        <!-- <md-content flex layout-padding>
+          <div layout="row" layout-align="top left"> -->
+
+            <!-- <md-button ng-click="refreshmenu()" class="md-raised" style="width:100px;">
+              <md-icon ng-bind="'fast_forward'"></md-icon>
+            </md-button> -->
+
+            <!-- <md-button ng-click="refreshmenu()" class="md-raised" style="width:100px;">
+              <a href="/index_p5#?ward={{warddesc}}" target="_blank" class="w3-button w3-teal w3-border w3-round-large " style="width:100px;"
+                role="button">current</a>
+            </md-button>
+            <md-button ng-click="refreshmenu()" class="md-raised" style="width:100px;">
+              <a href="/index_p6#?ward={{warddesc}}" target="_blank" class="w3-button w3-teal w3-border w3-round-large " style="width:100px;"
+                role="button">previous</a>
+            </md-button>
+            <md-button ng-click="refreshmenu()" class="md-raised" style="width:100px;">
+              <a href="/index_p4#?ward={{warddesc}}" target="_blank" class="w3-button w3-teal w3-border w3-round-large " style="width:100px;"
+                role="button">Staff</a>
+            </md-button>
+            <md-button ng-click="refreshmenu()" class="md-raised" style="width:100px;">
+              <a href="/index_report#?ward={{warddesc}}" target="_blank" class="w3-button w3-teal w3-border w3-round-large " style="width:100px;"
+                role="button">Report</a>
+            </md-button>
+
+            <a href="/index_authen" target="_blank" class="w3-button w3-teal w3-border w3-round-large " style="width:100px;" role="button">
+              <span class="glyphicon glyphicon-briefcase"></span>
+            </a> -->
+
+          <!-- </div>
+        </md-content> -->
+      </section>
+    </div>
+  </form>
+
+</body>
+
+</html>

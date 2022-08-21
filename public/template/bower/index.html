@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-app lang="en">
+<head>
+  <title>BI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="client/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" type="text/css" href="client/css/style.css">-->
+  <script src="client/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="client/bower_components/angular/angular.min.js"></script>
+  <script src="client/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="client/bower_components/c3/c3.css" rel="stylesheet" type="text/css">
+
+  <!-- Load d3.js and c3.js -->
+  <script src="client/bower_components/d3/d3.min.js" charset="utf-8"></script>
+  <script src="client/bower_components/c3/c3.min.js"></script>
+<script src="server/js/php.controller.js"></script>
+</head>
+
+<body ng-controller="myController">
+<div class="container wrapper" >
+<nav class="navbar navbar-default">
+<div class="alert alert-default navbar-brand search-box">
+<button class="btn btn-primary" ng-show="testa_form" ng-click="formToggle()"> Real time data </button>
+<!--<button class="btn btn-primary" ng-show="testb_form" ng-click="formToggle2()"> page2 </button>
+<button class="btn btn-primary" ng-show="testc_form" ng-click="formToggle3()"> page3 </button>
+<button class="btn btn-primary" ng-show="testd_form" ng-click="formToggle4()"> page4 </button>-->
+</div>
+</nav>
+<!--<div  ng-include src="kittipong.html" hidden></div>-->
+<div ng-include src="'client/app/php1.html'"></div>
+<!--<div ng-include src="'/c32'"></div>
+<div ng-include src="'/c33'"></div>
+<div ng-include src="'/c34'"></div>-->
+</div>
+
+ </body>
+</html>
+

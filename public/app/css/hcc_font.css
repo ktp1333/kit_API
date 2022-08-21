@@ -1,0 +1,81 @@
+.fontlato {
+  font-family: 'Lato', sans-serif !important;
+}
+.fonts {font-size: 0.8em !important;}
+.fontsn {font-size: 0.9em !important;}
+.fontn { font-size: 1em !important;}
+.fontnm { font-size: 1.1em !important;}
+.fontm {font-size: 1.3em !important;}
+.fontml {font-size: 1.5em !important;}
+.fontl {font-size: 1.7em !important;}
+.fontxl {font-size: 2.4em !important;}
+.fontxxl {font-size: 3.5em !important;}
+
+.fontbold{font-style: bold !important;}
+.fontitalic{font-style: italic !important;}
+.fontunderline{text-decoration: underline !important;}
+.font-head {
+  font-size: 1.5em !important;
+  color:rgb(222, 236, 234);
+  margin-left: 3vW !important;
+  }
+.fontgreen1{color:rgb(1, 100, 1) !important;}
+.fontr1{color:rgb(255, 0, 0) !important;}
+.fontr2{color:rgb(220, 0, 0) !important;}
+.fontr3{color:rgb(200, 8, 8) !important;}
+.fontr4{color:rgb(180, 8, 8) !important;}
+.fontr5{color:rgb(160, 0, 0) !important;}
+.fontr6{color:rgb(140, 0, 0) !important;}
+.fontr7{color:rgb(120, 8, 8) !important;}
+.fontr8{color:rgb(100, 8, 8) !important;}
+.fontr9{color:rgb(80, 0, 0) !important;}
+.fontr10{color:rgb(60, 0, 0) !important;}
+.fontr11{color:rgb(40, 8, 8) !important;}
+.fontr12{color:rgb(20, 8, 8) !important;}
+.fontbg1{color:rgb(0, 250, 200) !important;}
+.fontbg2{color:rgb(0, 230, 190) !important;}
+.fontbg3{color:rgb(0, 210, 180) !important;}
+.fontbg4{color:rgb(0, 190, 170) !important;}
+.fontbg5{color:rgb(0, 170, 170) !important;}
+.fontbg6{color:rgb(0, 150, 170) !important;}
+.fontbg7{color:rgb(0, 130, 160) !important;}
+.fontbg8{color:rgb(0, 110, 150) !important;}
+.fontbg9{color:rgb(0, 90, 140) !important;}
+.fontbg10{color:rgb(0, 70, 130) !important;}
+.fontbg11{color:rgb(0, 30, 110) !important;}
+.fontbg12{color:rgb(0, 10, 100) !important;}
+
+.fontwhite{color:rgb(255, 255, 255) !important;}
+.fontgr15{color:rgb(108, 108, 108) !important;}
+.fontgr14{color:rgb(118, 118, 118) !important;}
+.fontgr13{color:rgb(128, 128, 128) !important;}
+.fontgr12{color:rgb(138, 138, 138) !important;}
+.fontgr11{color:rgb(148, 148, 148) !important;}
+.fontgr10{color:rgb(158, 158, 158) !important;}
+.fontgr9{color:rgb(168, 168, 168) !important;}
+.fontgr8{color:rgb(178, 178, 178) !important;}
+.fontgr7{color:rgb(188, 188, 188) !important;}
+.fontgr6{color:rgb(198, 198, 198) !important;}
+.fontgr5{color:rgb(208, 208, 208) !important;}
+.fontgr4{color:rgb(218, 218, 218) !important;}
+.fontgr3{color:rgb(228, 228, 228) !important;}
+.fontgr2{color:rgb(238, 238, 238) !important;}
+.fontgr1{color:rgb(248, 248, 248) !important;}
+
+.fontb4 {
+  color: rgb(65, 65, 65) !important;
+}
+
+.fontb3 {
+  color: rgb(45, 45, 45) !important;
+}
+
+.fontb2 {
+  color: rgb(25, 25, 25) !important;
+}
+
+.fontb1 {
+  color: rgb(5, 5, 5) !important;
+}
+
+  

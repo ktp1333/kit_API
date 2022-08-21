@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+* body {
+    font-family: sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+overflow-y: hidden;
+}
+
+[class^="box-"] {
+    display: grid;
+    /* place-items: center; */
+    border: 1px solid rgb(151, 151, 151);
+}
+
+.container {
+    display: grid;
+    /* justify-content: center; */
+    /* display: grid; */
+    width: 100vw;
+    height: 100vh;
+    grid-gap: 5px;
+}
+
+.box-1 {
+    height: 15vh;
+    /* background-color: #406578; */
+    background: linear-gradient(to left top, #41637c, #4ec1bc);
+    margin: 0rem 0 0rem 0;
+    padding: 0rem;
+    /* box-shadow: 6px 6px 20px rgba(122,122,122,0.2); */
+    border-radius: 0rem;
+    justify-content: space-between;
+}
+
+.box-2 {
+    width: 22vW;
+    height: 80vh;
+    background-color: #406578;
+}
+
+.box-3 {
+    width: 77vW;
+    height: 80vh;
+    background-color: #f6f7f8;
+}
+
+.box_main {
+    display: block;
+    position: absolute;
+    top: 20vH;
+    left: 1vW;
+    width: 21vW;
+    min-height: 76vH;
+    max-height: 76vH;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    /* border:solid 1px rgb(95, 177, 78); */
+    /* margin-left: 3px; */
+    text-align: left;
+    background-color: #f5f3f3f0;
+}
+
+.head1 {
+    display: block;
+    /* margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em; */
+    background-color: #49c4d6;
+    font-family: Tahoma !important;
+    font-size: 1.5vW !important;
+    font-weight: bold !important;
+    color: white;
+    text-align: center;
+
+}
+
+.p1 {
+    display: block;
+    margin-left: 1vW;
+    margin-right: 1vW;
+    font-family: Tahoma !important;
+    font-size: 1.2vW !important;
+    font-weight: bold !important;
+    color: #167786;
+    text-align: left;
+}
+
+.table1 {
+    border-collapse: collapse;
+    width: 90%;
+    padding: 0px !important;
+    margin-top: 0px !important;
+    margin-left: 1vW !important;
+    /* margin-right: 2vW !important; */
+    overflow-y: scroll;
+    font-family: Tahoma !important;
+    font-size: 1.2vW !important;
+}
+
+.table1 .th1,
+.td {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.table1 .tr1:nth-child(even) {
+    background-color: #e4e1e1
+}
+
+.cards {
+    display: flex;
+    background: linear-gradient(to left top, #41637c, #4ec1bc);
+    margin: 0rem 0 0rem 0;
+    padding: 0rem;
+    /* box-shadow: 6px 6px 20px rgba(122,122,122,0.2); */
+    border-radius: 0rem;
+    justify-content: space-between;
+
+}
+
+.marginleft15 {
+    /* margin-left: 2vW !important; */
+    /* display: block; */
+    margin-left: 1vW;
+}
+
+.marginright15 {
+    float: right !important;
+    margin-right: 1vW;
+}
+
+.text1 {
+    /* margin-left: 0.5vW  ; */
+    font-size: 1.7em !important;
+    color: #edf1f3 !important;
+}
+
+.fontss {font-size: 0.7em !important;}
+.fonts {font-size: 0.8em !important;}
+.fontsn {font-size: 0.9em !important;}
+.fontn { font-size: 1em !important;}
+.fontm {font-size: 1.3em !important;}
+.fontl {font-size: 1.7em !important;}
+.fontxl {font-size: 2.4em !important;}
+.fontxxl {font-size: 3.5em !important;}
+.boxchild {
+    /* display: block; */
+    position: absolute;
+
+    /* margin: 0;
+    padding-right: 1vW;
+    width: 25vW;
+    height: 40vH; */
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    /* border:solid 1px rgb(95, 177, 78); */
+    /* margin-left: 3px; */
+    text-align: left;
+    background-color: #bdbbbbf0;
+}
+
+.box1 {
+    /* position: absolute; */
+    /* margin: 0; */
+    /* padding-right: 1vW; */
+    /* top: 1vH; */
+    /* left: 1vW; */
+    width: 38vW !important;
+    height: 15vH !important;
+}
+
+.box2 {
+    width: 38vW !important;
+    height: 55vH !important;
+}
+.box3 {
+    width: 37vW !important;
+    height: 70vH !important;
+}
+.width11vW {
+    min-width:11vW !important;
+    max-width:11vW !important;
+  }
+   .align-c {
+   text-align: center !important;
+ }
+ .align-l {
+   text-align: left !important;
+ }
+ .align-r {
+   text-align: right !important;
+ }

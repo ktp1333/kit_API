@@ -1,0 +1,109 @@
+<form name="myForm" class="form-horizontal" role="form">
+  <style>
+    table.classname {
+      width: 150px;
+      /*align="center";*/
+      display: table;
+      /*border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;*/
+    }
+    
+    th,
+    td {
+      text-align: center;
+      height: 50px;
+      vertical-align: bottom;
+      /*background-color:gray;*/
+    }
+    
+    div.ex1 {
+      width: 100px;
+      margin: auto;
+      /*border: 3px solid #73AD21;*/
+    }
+  </style>
+
+  <div class="container">
+    <div class="panel panel-default" width="50%">
+      <div class="panel-heading" align="center">
+        <font face="" color="Blue" size="6"> LOG IN </font>
+      </div>
+      <div class="panel-body" align="center">
+
+
+
+
+        <div class="jumbotron">
+          <div >
+            <table >
+              <tr>
+                <!--<td>
+                  <div class="form-group">
+                    <label  for="repeatSelect2"> เลือก Ward : </label>
+                    <div >
+                      <select name="repeatSelect2" class="form-control" id="repeatSelect2" ng-model="x.repeatSelect2" autofocus>
+      <option ng-repeat="x in Ward" value="{{x.Ward}}">{{x.Ward}}</option>
+    </select>
+                      <input type="text" class="form-control" placeholder="Ward" value="{{x.repeatSelect2}}" ng-hide="true" required/>
+                    </div>
+                    <tr>
+                    </tr>
+                  </div>
+
+                </td>-->
+                <td>
+                  <div class="form-group">
+                    <label > Password : </label>
+                    <div >
+                      <input type="text" class="form-control" ng-model="password" placeholder="Password" value="" required/>
+                    </div>
+                  </div>
+
+                </td>
+                <tr>
+                </tr>
+                <td>
+
+                  <div class="form-group">
+                    <label >  </label>
+                    <div >
+                      <button type="button" class="btn btn-info" ng-click="login(password)" style="width:150px"> Submit </button>
+                    </div>
+                  </div>
+
+                </td>
+
+                <tr>
+                </tr>
+                <td>
+
+                  <div class="form-group">
+                    <label ><font color="red">  {{error}} </font></label>
+  
+                  </div>
+
+                </td>
+
+
+
+
+              </tr>
+
+
+
+
+
+              <!--ng-click="ivfToggle()"-->
+            </table>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</form>

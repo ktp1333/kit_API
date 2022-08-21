@@ -1,0 +1,88 @@
+<html ng-app="myApp" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <title>emr</title>
+  <meta meta charset=utf-8>
+  <meta name="apple-mobile-web-app-title" content="PYM BI" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 3, user-scalable = no"
+  />
+  <link rel="icon" sizes="192x192" href="chart.png">
+  <!-- <link rel="stylesheet" type="text/css" href="template/css/bootstrap.min.css"> -->
+  <!--<link rel="stylesheet" type="text/css" href="../../css/style.css">-->
+  <!-- <script src="template/js/jquery.min.js"></script> -->
+  <!--<script src="template/js/angular.min.js"></script>-->
+  <!-- <script src="template/js/bootstrap.min.js"></script> -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.17/angular-filter.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+  <link rel="stylesheet" href="../../app/search/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../app/search/assets/font-awesome/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="../../app/search/assets/css/form-elements.css"> -->
+  <!-- <link rel="stylesheet" href="../../app/search/assets/css/style.css"> -->
+  <script type="text/javascript" src="../../node_modules/async/dist/async.min.js"></script>
+  <!-- <script src="../../bower_components/angular/angular.min.js"></script> -->
+  <script src="../../bower_components/angular/angular-route.min.js"></script>
+  <!-- <script src="../../app/search/assets/js/jquery-1.11.1.min.js"></script>
+  <script src="../../app/search/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../app/search/assets/js/jquery.backstretch.min.js"></script>
+  <script src="../../app/search/assets/js/scripts.js"></script> -->
+  <script src="../../template/moment/moment.min.js"></script>
+  <script src="../../bower_components/bootstrap/ui-bootstrap-tpls-0.10.0.min.js"></script>
+
+  <link href="template/bi/c3/c3.css" rel="stylesheet" type="text/css">
+  <script src="template/bi/d3/d3.min.js" charset="utf-8"></script>
+  <script src="template/bi/c3/c3.min.js"></script>
+  <script src="template/moment/moment.min.js"></script>
+  <script src="template/js/jquery.min.js"></script>
+  <script src="template/js/bootstrap.min.js"></script>
+  <script src="template/js/jsonQ.min.js"></script>
+  <script src="template/lodash/lodash.min.js"></script>
+  <script src="template/d3/d3.min.js"></script>
+  <script src="template/lodash/lodash.js"></script>
+  <script src="template/d3/d3.js"></script>
+
+  <link rel="stylesheet" href="../../config/css/div_01.css">
+  <link rel="stylesheet" href="../../config/css/color_green.css">
+  <link rel="stylesheet" href="../../config/css/font.css">
+  <script src="../app/emr/emr.js"></script>
+</head>
+
+<body class="body" ng-controller="emrController">
+
+  <div class="d1">
+    <div ng-include="'../../app/emr/menu.html'"></div>
+    <div class="contentdetail">
+      <div style="display:flex; flex-direction:row">
+        <div style="float: left; width: 25%;" ng-include="'../app/emr/emr_left.html'"></div>
+        <div style="float:  right; width: 74%;" ng-include="'../app/emr/episode.html'"></div>
+      </div>
+    </div>
+    <!-- <div style="display: table-row">
+          <div style="display: table-cell; vertical-align:middle;">
+            <div style="text-align: left; display: inline-block;">
+              <iframe name="if1" src="" width="1400px" height="4000px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0">
+    
+              </iframe>
+            </div>
+          </div>
+        </div>
+          <div  style="float: right; width: 74%;"  >
+            <iframe name="F1" ID="iframe1" width="79%" height="4000px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0">
+           </iframe>
+          </div> -->
+  </div>
+</body>
+
+</html>

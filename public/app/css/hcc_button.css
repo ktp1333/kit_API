@@ -1,0 +1,23 @@
+.btn1 {
+  /* color : rgb(116, 81, 150); */
+  background-color: rgba(63, 112, 158, 0.96) !important;
+  /* border-radius: 10px 0 0 10px; */
+  border-radius: 3px;
+  /* font-style: bold !important;
+  font-size: 1em; */
+  /* margin: 0px  0px  0px  0px; */
+  margin: 1px  1px  1px  1px;
+  /* padding: 1px  1px  1px  1px; */
+ 
+}
+.btn1:not([disabled]):hover {
+  background-color: rgba(79, 139, 196, 0.96) !important;
+  /* color: white !important; */
+}
+
+.btn1[disabled] {
+  /* color : rgb(187, 187, 187); */
+  background-color:rgba(22, 38, 53, 0.96) !important;
+}
+
+       

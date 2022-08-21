@@ -1,0 +1,165 @@
+<html ng-app="myApp" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <title> BI</title>
+  <meta name="apple-mobile-web-app-title" content="PRINC HEALTH BI" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="">
+  <meta name="viewport"
+    content="width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 3, user-scalable =yes" />
+  <!-- <link rel="icon" sizes="192x192" href="../../app/image/chart.png"> -->
+
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Pridi' rel='stylesheet'>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script> -->
+
+  <link rel="stylesheet" href="../../link_require/angular-material.min.css">
+  <script src="../../link_require/angular.min.js"></script>
+  <script src="../../link_require/angular-animate.min.js"></script>
+  <script src="../../link_require/angular-aria.min.js"></script>
+  <script src="../../link_require/angular-messages.min.js"></script>
+  <script src="../../link_require/angular-material.min.js"></script>
+  <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500"> -->
+  <link rel="stylesheet" href="../../app/search/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../app/search/assets/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../app/search/assets/css/form-elements.css">
+  <link rel="stylesheet" href="../../app/search/assets/css/style.css">
+  <script src="../../bower_components/underscore/underscore.js"></script>
+
+  <!-- <script src="../../bower_components/angular/angular-route.min.js"></script> -->
+  <script src="../../app/search/assets/js/jquery-1.11.1.min.js"></script>
+  <script src="../../app/search/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../app/search/assets/js/jquery.backstretch.min.js"></script>
+  <script src="../../app/search/assets/js/scripts.js"></script>
+  <script src="../../node_modules/moment/min/moment.min.js"></script>
+  <!-- <script src="../../bower_components/bootstrap/ui-bootstrap-tpls-0.10.0.min.js"></script> -->
+  <!-- //from web -->
+  <!-- <link rel="stylesheet" href="../../../css/bootstrap.css"> -->
+  <!-- <link href="../../../css/style.css" rel='stylesheet' type='text/css' /> -->
+
+  <script type="text/javascript" src="../../node_modules/async/dist/async.min.js"></script>
+  <link href="../../template/bi/c3/c3.css" rel="stylesheet" type="text/css">
+  <script src="../../template/bi/d3/d3.min.js" charset="utf-8"></script>
+  <script src="../../template/bi/c3/c3.min.js"></script>
+  <link rel="stylesheet" href="../../app/addon_dashboard/css/mycss.css">
+
+  <link rel="stylesheet" type="text/css" href="../../node_modules/tabulator-tables/dist/css/semantic-ui/tabulator_semantic-ui.min.css">
+  <link href="../../node_modules/tabulator-tables/dist/css/tabulator.min.css" rel="stylesheet">
+  <script type="text/javascript" src="../../node_modules/tabulator-tables/dist/js/tabulator.min.js"></script>
+  <script type="text/javascript" src="../../node_modules/jspdf/dist/jspdf.umd.js"></script>
+  <script type="text/javascript" src="../../node_modules/jspdf-autotable/dist/jspdf.plugin.autotable.min.js"></script>
+
+  <script src="../app/addon_dashboard/addon_dashboard.controller.js"></script>
+  <script src="../../app/form.factory.js"></script>
+  <script type="text/javascript" src="../../app/app.factory.js"></script>
+  <script type="text/javascript" src="../../app/app2.factory.js"></script>
+</head>
+
+<body ng-controller="addon_dashboardController as vm">
+
+  <div class="container">
+    <div class="box-1 ">
+      <div flex layout="column" style="width:100vW">
+        <div class=""></div>
+        <div class="text1">CENTRIX Hospital</div>
+        <!-- <div class="text1">{{sitename}}</div> -->
+        <div class="alignleft" flex layout="row">
+          <div layout="row" layout-align="start center" layout-wrap>
+            <div class="text3 align-c">From</div>
+            <div>
+              <input type="date" class="form-control width11vW  align-c" id="datepicker" ng-model="dtp1.value"
+                min="2016-01-01" required />
+              <input type="text" name="tdate" class="form-control width11vW align-c" value="{{dtp1.value}}"
+                ng-hide="true" />
+            </div>
+            <div class="text3 align-c">To</div>
+            <div>
+              <input type="date" class="form-control width11vW  align-c" id="datepicker2" ng-model="dtp2.value"
+                min="2016-01-01" required />
+              <input type="text" name="tdate2" class="form-control width11vW align-c" value="{{dtp2.value}}"
+                ng-hide="true" />
+            </div>
+
+          </div>
+          <!-- <md-button class="  md-raised " aria-label="Favorite" ng-click="action()">
+            {{vm.lba_btn}}
+          </md-button>
+          <md-button class="md-icon-button  md-raised " aria-label="Favorite" ng-click="refreshdata()">
+            <md-icon ng-bind="'refresh'" style="width:25px"></md-icon>
+          </md-button> -->
+        </div>
+      </div>
+    </div>
+    <div flrx layout="row">
+      <div class="box-2">
+        <div id='b2' class="box_main">
+          <p class="head1"> {{datetime}} </p>
+          <div class="" style="overflow-y:scroll; height:70vH">
+            <div flex layout="column">
+              <md-button class="  md-raised " aria-label="Favorite" ng-click="action(1,dtp1.value,dtp2.value)">{{vm.a1}}</md-button>
+              <md-button class="  md-raised " aria-label="Favorite" ng-click="action(2,dtp1.value,dtp2.value)">{{vm.a2}}</md-button>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="box-3" >
+        <div flex layout="row" ng-show="vm.show1==true;" style="margin-top: 0em;">
+          <div flex layout="column" ng-show="vm.showresult">
+            <div class=" box1" id='left1'>{{vm.a1}}</div>
+            <div class=" box2" id='left2'> </div>
+          </div>
+          <div class=" box3" id='right3' ng-show="vm.showresult">
+            <div flex layout="column">
+              <div class="align-r">
+                <img src="../../app/image/json.png" alt="" style="width:40px;" ng-click="saveJSON()">
+                <img src="../../app/image/xls.png" alt="" style="width:40px" ng-click="downloadFile('csv')">
+                <img src="../../app/image/toprint.png" alt="" style="width:40px" ng-click="printFile()">
+
+              </div>
+              <div id="example-table" style="margin-top:0;min-height: 70vH;max-height:70vH;overflow-y:scroll;"></div>
+            </div>
+          </div>
+        </div>
+        <div flex layout="row" ng-show="vm.show2==true;" style="margin-top: 0em;">
+          <div flex layout="column" ng-show="vm.showresult">
+            <div class=" box1" id='left1'>{{vm.a2}}</div>
+            <div class=" box2" id='left2'> </div>
+          </div>
+          <div class=" box3" id='right3' ng-show="vm.showresult">
+            <div flex layout="column">
+              <div class="align-r">
+                <img src="../../app/image/json.png" alt="" style="width:40px;" ng-click="saveJSON()">
+                <img src="../../app/image/xls.png" alt="" style="width:40px" ng-click="downloadFile('csv')">
+                <img src="../../app/image/toprint.png" alt="" style="width:40px" ng-click="printFile()">
+
+              </div>
+              <div id="example-table" style="margin-top:0;min-height: 70vH;max-height:70vH;overflow-y:scroll;"></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div flex layout="row" ng-show="vm.show_month==true;">
+          <div flex layout="column">
+            <div class=" box1" id='daily_bedoccupancy'> </div>
+            <div class=" box1" id='chartadmitdc'> </div>
+          </div>
+          <div flex layout="column">
+            <div class=" box1" id='opd_chartdaily'> </div>
+            <div class=" box1" id='revenue_chart'> </div>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

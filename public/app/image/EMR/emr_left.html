@@ -1,0 +1,167 @@
+<form id="left" ng-if="left">
+  <style type="text/css">
+    .table1 {
+      border-collapse: collapse;
+      padding: 0px !important;
+      margin-top: 0px !important;
+      display: block;
+      /* height: 500px; */
+      /* overflow-y: scroll; */
+      /* min-height: 85vh !important;
+      max-height: 85vh !important; */
+      max-width: 85vH !important;
+
+    }
+
+    .table1 th {
+      border-bottom: 0px solid transparent;
+      background-color: #828282;
+      width: 350px !important;
+    }
+
+    .table1 td {
+      padding: 0px !important;
+      background-color: #c7c7c7;
+    }
+
+    .table1 a:hover {
+      color: white;
+    }
+
+    .table1 a:link {
+      color: whitesmoke;
+      text-decoration: none;
+    }
+
+    .table1a:active {
+      color: yellow;
+    }
+
+    .table1 a:visited {
+      color: rgb(236, 233, 233);
+    }
+  </style>
+
+  <div ng-cloak class="tabsdemoDynamicHeight ">
+    <md-content>
+        <md-button ng-click="refreshmenu()" class="md-raised" style="width:100px;">
+            <md-icon ng-bind="'fast_forward'"></md-icon>
+          </md-button>
+      <md-tabs md-dynamic-height md-border-bottom>
+         
+        <md-tab label="Episode" ng-click="episode()">
+          <md-content class="md-padding">
+              <div style="width:100%;overflow: auto;overflow-x: hidden;height: 100%;">
+            <!-- <div class="table-responsive"> -->
+
+              <table class="table table-hover table1">
+                <tr>
+                  <th>
+                    <h3 style="color:bisque"> HN : {{HN}}</h3>
+                    <h2 style="color:burlywood"> {{name}}</h2>
+                  </th>
+                </tr>
+                <tr ng-repeat="ens in episode01">
+                  <td>
+                    <button class="btn btn-primary btn-block align-l" ng-click="select_by_episode(ens.PatientVisitUID,ens.EN,ens.date)" title="Show">
+                      <h4 style="color:bisque"> {{ens.StartDTTM | date : "dd/MM/y"}}</h4>
+                      <p style="color:lawngreen;font-weight: bold;display:block;word-wrap: break-word; white-space: normal;"> {{ens.Dx}}</p>                      
+                      <p style="color:rgb(186, 197, 29);font-weight: bold;display:block;word-wrap: break-word; white-space: normal;"> {{ens.Dr}}</p>
+                          EN: {{ens.EN}}<Br>
+                         PTVUID:{{ens.PatientVisitUID}} 
+                        
+
+                    </button>
+                  </td>
+                </tr>
+              </table>
+              <div>
+
+          </md-content>
+        </md-tab>
+
+        <!-- <md-tab label="MED" ng-click="openmed()">
+              <md-content class="md-padding">
+    
+                <div class="table-responsive">
+                <table class="table table-hover table1">
+                  <tr>
+                    <th>
+                      <h5> HN : {{HN}}</h5>
+                      <h4> {{FullName}}</h4>
+                    </th>
+                  </tr>
+                  <tr ng-repeat="medday in meddays">
+                    <td>
+                      <button class="btn btn-primary btn-block " ng-click="selectmedbyday(medday.ddate,PatientID)" title="Show">
+                        {{medday.ddate | limitTo:10}}
+                    
+                      </button>
+                    </td>
+                  </tr>
+                </table> 
+                <div>
+    
+              </md-content>
+            </md-tab> -->
+
+        <!-- <md-tab label="Scan" ng-click="openimage()">
+          <md-content class="md-padding ">
+            <table class="table table-hover table1">
+              <tr>
+                <th>
+                  <h5> HN : {{HN}}</h5>
+                  <h4> {{FullName}}</h4>
+
+                </th>
+              </tr>
+              <tr ng-repeat="data in datas">
+                <td>
+                  <div class="span2">
+                    <p>  <button class="btn btn-primary btn-block" ng-click="selectpict(data.ImagePath)" title="Show"> 
+                      {{data.ScanDateTime.date| date:'MM/dd/yyyy @ h:mma'}}<Br>{{data.FormName}} (ID={{data.PatientScanningFormID}})
+                      <Br>
+                      </button></p>
+                
+                  </div>
+
+                </td>
+              </tr>
+            </table>
+
+          </md-content>
+        </md-tab> -->
+
+
+        <!-- <md-tab label="LAB" ng-click="openlab()">
+          <md-content class="md-padding">
+
+            <table class="table table-hover table1">
+              <tr>
+                <th>
+                  <h5> HN : {{HN}}</h5>
+                  <h4> {{FullName}}</h4>
+                </th>
+              </tr>
+              <tr ng-repeat="lab in labs">
+                <td>
+                    <div class="span2">
+                        <p> 
+                  <button class="btn btn-primary btn-block " ng-click="selectlab(lab.MRID)" title="Show">
+                    {{lab.RegistrationDateTime.date | limitTo:16}}
+                    <Br>{{lab.MRID}}
+                  </button>
+                </button></p>
+                </td>
+              </tr>
+            </table>
+   
+          </md-content>
+        </md-tab> -->
+
+
+      </md-tabs>
+    </md-content>
+    </div>
+
+</form>

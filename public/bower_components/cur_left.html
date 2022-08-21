@@ -1,0 +1,24 @@
+<form id="rightform" >
+  <div class="panel panel-info">
+    <div class="panel-heading">Patient on ward </div>
+    <div class="panel-body">
+       <!--<button type="text" class="btn btn-primary" >{{ptname}} </button>-->
+ 
+
+<!-- Table to show employee detalis -->
+<div class="table-responsive">
+<table class="table table-hover">
+<tr ng-repeat="detail in details">
+<td>
+HN={{detail.HN}}..EN={{detail.EN}}<Br>
+<font color="blue">{{detail.rowID}} : {{detail.name}}</font><Br>
+<font color="green">{{detail.ward}}</font></td>
+<td>
+<button class="btn btn-warning" ng-click="selectpt(detail)" title="Edit"><span class="glyphicon glyphicon-edit"></span></button>
+</td>
+
+</tr>
+</table>
+</div>
+      </div>
+</form>

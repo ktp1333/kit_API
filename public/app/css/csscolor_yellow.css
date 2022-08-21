@@ -1,0 +1,40 @@
+  
+ 
+    .bgcolor50 {
+      background-color: #FFFDE7 !important;
+    }
+
+    .bgcolor100 {
+      background-color: #FFF9C4 !important;
+    }
+
+    .bgcolor200 {
+      background-color: #FFF59D !important;
+    }
+
+    .bgcolor300 {
+      background-color: #FFF176 !important;
+      /* color: hsl(120, 17%, 95%) !important; */
+    }
+    .bgcolor400 {
+      background-color: #FFEE58 !important;
+    }
+    .bgcolor500 {
+      background-color: #FFEB3B !important;
+    }
+    .bgcolor600 {
+      background-color: #FDD835 !important;
+    }
+    .bgcolor700 {
+      background-color: #FBC02D !important;
+    }
+    .bgcolor800 {
+      background-color: #F9A825 !important;
+    }
+    .bgcolor900 {
+      background-color: #F57F17 !important;
+    }
+    .bgcolorwhite {
+      background-color:white !important;
+    }
+    

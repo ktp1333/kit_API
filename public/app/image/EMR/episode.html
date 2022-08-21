@@ -1,0 +1,270 @@
+<form id="right" ng-if="right">
+  <div style="width:100%;overflow: auto;overflow-x: hidden;height: 100%;">
+    <!-- <div style=" width: 100%;overflow: auto;overflow-x: hidden;" ng-if="episode"> -->
+    <!-- <md-content flex layout-padding class="bgcolor500 ">
+      <input type="text" name="search" class="form-control width-400" placeholder="search keyword" ng-model="search_query" value=" "
+        autofocus />
+    </md-content> -->
+    <Br>
+    <!-- <input type="image" src="../../images/print.png" id="button1" style="position: absolute;right:50px;top:10px;" width="30px"
+      ng-click="printreport()"> -->
+    <!-- <input type="image" src="../../images/migrate.png" id="button1" style="position: absolute;left:50px;top:10px;" width="30px"
+      ng-click="migrate()"> -->
+
+    <div class="panel panel-primary ">
+      <div class="panel-heading">
+        <h4 style="color:bisque">Name: {{name}} | HN: {{HN}} | Episode : {{EN}} {{Edate | date : "dd/MM/y"}} | PTUID:{{PTUID}} | PTVUID : {{VisitUID}}</h4>
+      </div>
+    </div>
+    <!-- <div class="panel panel-warning ">
+      <div class="panel-heading">Episode : {{EN}} {{Edate | date : "dd/MM/y"}} </div>
+    </div> -->
+    <div class="panel panel-warning ">
+      <!-- <div class="panel-heading">Note </div>
+        <div class=" panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: hidden; "> -->
+
+      <div class="panel panel-warning ">
+        <div class="panel-heading">Note</div>
+        <div class=" panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: auto;">
+          <table class="table table-hover ">
+            <tr ng-repeat="detail in note">
+              <td>
+                <!-- <button class="btn btn-primary btn-block " ng-click="openscandoc(detail.PatientVisitUID,detail.ResultNumber)" title="Show"> -->
+                <b>{{detail.NoteName}} | {{detail.DocumentTemplateUID}}</b>
+                <Br>
+                <div style="max-width: 1200px; word-wrap: break-word;" ng-bind-html="detail.TemplateXML"></div>
+
+                <!-- <img style="width: 90%;" src="data:image/jpg;base64,{{detail.TemplateXML}}" /> -->
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- </div> -->
+    </div>
+    <div class="panel panel-warning ">
+      <div class="panel-heading">Allergy</div>
+      <div class="panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: hidden;max-height: 25%; ">
+        <table class="table table-hover ">
+          <tr ng-repeat="detail in allergy">
+            <td class="font-small" width="100px">{{detail.report_date | date : "dd/MM/y"}}
+            </td>
+            <td class="font-red">{{detail.AllergicTo}}
+              <Br> {{detail.AllergyDescription}}
+              <Br> {{detail.AllergySymptoms}}
+
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="panel panel-warning ">
+      <div class="panel-heading">Medical history</div>
+      <div class=" panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: hidden;max-height: 20%; ">
+        <table class="table table-hover ">
+          <tr ng-repeat="detail in medhx">
+            <!-- <td class="font-small" width="100px">{{detail.VisitDate | date : "dd/MM/y"}}
+              </td> -->
+            <td>current Med:{{detail.CurrentMedication}}
+              <Br> long term Med:{{detail.LongTermMedication}}
+              <Br> Remarks:{{detail.Comments}}
+              <Br> Surgical History:{{detail.SurgicalDetail}}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="panel panel-warning ">
+      <div class="panel-heading">Chief complain</div>
+      <div class=" panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: hidden;max-height: 20%; ">
+        <table class="table table-hover ">
+          <tr ng-repeat="detail in cc">
+            <!-- <td class="font-small" width="100px">{{detail.VisitDate | date : "dd/MM/y"}}
+              </td> -->
+            <td>cc:{{detail.Complient}}
+              <Br> symptom:{{detail.Remarks}} </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="panel panel-warning ">
+      <div class="panel-heading">Physical exam</div>
+      <div class=" panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: hidden;max-height: 20%; ">
+        <table class="table table-hover ">
+          <tr ng-repeat="detail in PE">
+            <!-- <td class="font-small" width="100px">{{detail.VisitDate | date : "dd/MM/y"}}
+              </td> -->
+            <td>PE:{{detail.ExamDesc}}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="panel panel-warning ">
+      <div class="panel-heading">Diagnosis</div>
+      <div class=" panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: hidden;max-height: 20%; ">
+        <table class="table table-hover ">
+          <tr ng-repeat="detail in diag">
+            <!-- <td class="font-small" width="100px">{{detail.vstdate | date : "dd/MM/y"}}</td> -->
+            <td>{{detail.DiagType}} : {{detail.ProblemCode}} {{detail.ProblemName}}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="panel panel-warning ">
+      <div class="panel-heading">procedure</div>
+      <div class=" panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: hidden;max-height: 20%; ">
+        <table class="table table-hover ">
+          <tr ng-repeat="detail in procedure">
+            <!-- <td class="font-small" width="100px">{{detail.vstdate | date : "dd/MM/y"}}</td> -->
+            <td>{{detail.ICD9}} : {{detail.ProcedureName}} /{{detail.ProcedureDttm | date : "dd/MM/y"}}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="panel panel-warning ">
+      <div class="panel-heading">Medication
+        <input type="image" src="../../images/print.png" id="button1" style="position:right" width="30px" ng-click="printreport()">
+      </div>
+
+      <div class=" panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: hidden;max-height: 30%; ">
+        <div id="printableArea">
+          <table class="table table-hover ">
+            <!-- <tr ng-repeat="detail in med | filter:{UOM:''}"> -->
+            <tr ng-repeat="detail in med ">
+              <!-- <td >{{detail.vstdate | date : "dd/MM/y "}}</td> -->
+              <td class="font-small">{{detail.DrugName}} {{detail.Quantity | number : 0}} {{detail.Frequency}} </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-warning ">
+      <div class="panel-heading">LAB </div>
+      <div class=" panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: hidden; ">
+        <table class="table table-hover ">
+          <tr>
+            <td style="width:500px">
+              <div class="panel panel-warning ">
+                <div class="panel-heading">Order Item</div>
+                <div class=" panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: hidden;max-height: 38%; ">
+                  <table class="table table-hover ">
+                    <tr ng-repeat="detail in labname ">
+                      <td>
+                        <button class="btn btn-primary btn-block " ng-click="openlab(detail.PatientVisitUID,detail.ResultNumber)" title="Show">
+                          {{detail.RequestItemName}} | {{detail.ResultEnteredDttm | date : "dd/MM/y "}}
+                        </button>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="panel panel-warning ">
+                <div class="panel-heading">Detail </div>
+                <div class=" panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: hidden;max-height: 38%; ">
+                  <table class="table table-hover ">
+                    <tr ng-repeat="detail in lab ">
+                      <td>{{detail.RequestedDttm | date : "dd/MM/y "}}</td>
+                      <td class="font-small">{{detail.RequestItemName}} {{detail.ResultItemName}}
+                      </td>
+                      <td class="font-small">
+                        <p ng-if="detail.IsAbnormal=='H'" style="color:red;font-weight: bold"> {{detail.ResultValue}} </p>
+                        <p ng-if="detail.IsAbnormal=='L'" style="color:blue;font-weight: bold">{{detail.ResultValue}} </p>
+                        <p ng-if="detail.IsAbnormal=='N'" style="color:green;font-weight: bold">{{detail.ResultValue}} </p>
+                      </td>
+                      <td class="font-small">
+                        <p ng-if="detail.ReferenceRange==''" style="color:grey;font-weight: bold">{{detail.ResultValue}} </p>
+                        <p ng-if="detail.ReferenceRange!=''" style="color:grey;font-weight: bold"> ({{detail.ReferenceRange}}) </p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="panel panel-warning ">
+      <div class="panel-heading">Xray </div>
+      <div class=" panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: hidden; ">
+        <table class="table table-hover ">
+          <tr>
+            <td style="width:500px">
+              <div class="panel panel-warning ">
+                <div class="panel-heading">Order Item</div>
+                <div class=" panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: hidden;max-height: 38%; ">
+                  <table class="table table-hover ">
+                    <tr ng-repeat="detail in xrayname ">
+                      <td>
+                        <button class="btn btn-primary btn-block " ng-click="openxray(detail.PatientVisitUID,detail.ResultNumber)" title="Show">
+                          {{detail.RequestItemName}} | {{detail.ResultEnteredDttm | date : "dd/MM/y "}}
+                        </button>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="panel panel-warning ">
+                <div class="panel-heading">Detail </div>
+                <div class=" panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: hidden;max-height: 38%; ">
+                  <table class="table table-hover ">
+                    <tr ng-repeat="detail in xray ">
+                      <td>{{detail.RequestedDttm | date : "dd/MM/y "}}
+                        <Br> {{detail.RequestItemName}}
+                        <Br> {{detail.Report}}
+                      </td>
+
+                      <!-- <td class="font-small" >
+                            <p ng-if="detail.IsAbnormal=='H'" style="color:red;font-weight: bold"> {{detail.ResultValue}} </p>
+                            <p ng-if="detail.IsAbnormal=='L'"  style="color:blue;font-weight: bold">{{detail.ResultValue}}  </p>
+                            <p ng-if="detail.IsAbnormal=='N'"  style="color:green;font-weight: bold">{{detail.ResultValue}}  </p>
+                            </td>
+                          <td class="font-small"> 
+                              <p ng-if="detail.ReferenceRange==''"  style="color:grey;font-weight: bold">{{detail.ResultValue}}  </p>
+                              <p ng-if="detail.ReferenceRange!=''"  style="color:grey;font-weight: bold"> ({{detail.ReferenceRange}}) </p>
+                            </td> -->
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="panel panel-warning ">
+      <div class="panel-heading">Scan document </div>
+      <div class=" panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: hidden; ">
+
+        <div class="panel panel-warning ">
+          <div class="panel-heading">type</div>
+          <div class=" panel-body table-responsive collapse" style="width:100%;overflow: auto;overflow-x: auto;">
+            <table class="table table-hover ">
+              <tr ng-repeat="detail in scandoc">
+                <td>
+                  <!-- <button class="btn btn-primary btn-block " ng-click="openscandoc(detail.PatientVisitUID,detail.ResultNumber)" title="Show"> -->
+                  {{detail.Comments}} | {{detail.DocUploadedFrom}} ...({{detail.DocumentName}})
+                  <Br>
+
+
+                  <img style="width: 90%;" src="data:image/jpg;base64,{{detail.ScannedDocumentBase64}}" />
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</form>

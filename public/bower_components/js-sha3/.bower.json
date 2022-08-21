@@ -1,0 +1,22 @@
+{
+  "name": "js-sha3",
+  "version": "0.8.0",
+  "main": [
+    "src/sha3.js"
+  ],
+  "ignore": [
+    "samples",
+    "tests"
+  ],
+  "homepage": "https://github.com/emn178/js-sha3",
+  "_release": "0.8.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.8.0",
+    "commit": "f5ab6aed5985a8eb25a017e5763c5436b3224763"
+  },
+  "_source": "https://github.com/emn178/js-sha3.git",
+  "_target": "^0.8.0",
+  "_originalSource": "js-sha3",
+  "_direct": true
+}

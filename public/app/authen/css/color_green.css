@@ -1,0 +1,43 @@
+  
+ 
+    .bgcolor50 {
+      background-color: #E0F2F1 !important;
+    }
+
+    .bgcolor100 {
+      background-color: #B2DFDB !important;
+    }
+
+    .bgcolor200 {
+      background-color: #80CBC4 !important;
+    }
+
+    .bgcolor300 {
+      background-color: #4DB6AC !important;
+      /* color: hsl(120, 17%, 95%) !important; */
+    }
+    .bgcolor400 {
+      background-color: #26A69A !important;
+    }
+    .bgcolor500 {
+      background-color: #009688 !important;
+    }
+    .bgcolor600 {
+      background-color: #00897B !important;
+    }
+    .bgcolor700 {
+      background-color: #00796B !important;
+    }
+    .bgcolor800 {
+      background-color: #00695C !important;
+    }
+    .bgcolor900 {
+      background-color: #004D40 !important;
+    }
+    .bgcolorwhite {
+      background-color:white !important;
+    }
+    .bgcolorgrey {
+      background-color:rgb(155, 154, 154) !important;
+    }
+    

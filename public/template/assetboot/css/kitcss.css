@@ -1,0 +1,52 @@
+ 
+    body {
+      padding-top: 10px;
+    }
+    
+    .mygrid-wrapper-div {
+      border: gray 2px;
+      overflow: scroll;
+        /*overflow-x: scroll;*/
+      height: 500px;
+    }
+        th,
+    td {
+      text-align: center;
+      height: 50px;
+      vertical-align: bottom;
+      /*background-color:gray;*/
+      /*padding-left: 20px;*/
+    }
+    .mygrid-wrapper-div300 {
+      border: gray 2px;
+      overflow: scroll;
+      height: 300px;
+    }
+/*tr {
+width: 100%;
+display: inline-table;
+}
+
+table{
+ height:300px; 
+}
+tbody{
+  overflow-y: scroll;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+}*/
+/*
+table {
+  width: 100%;
+}
+td.i {
+  position: relative;
+  height: 10vh;
+  overflow: hidden;
+}
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}*/
